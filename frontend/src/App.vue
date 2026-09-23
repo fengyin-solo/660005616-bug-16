@@ -20,6 +20,7 @@
         <DAGCanvas />
       </div>
       <div class="side-area">
+        <AlertPanel />
         <LogPanel />
         <CircuitBreakerPanel />
       </div>
@@ -30,6 +31,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import DAGCanvas from './components/DAGCanvas.vue'
+import AlertPanel from './components/AlertPanel.vue'
 import LogPanel from './components/LogPanel.vue'
 import CircuitBreakerPanel from './components/CircuitBreakerPanel.vue'
 import { useDAGStore } from './store/dag'

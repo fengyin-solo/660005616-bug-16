@@ -24,5 +24,7 @@ const logs = computed(() => store.execution?.logs || [])
 .log-list{max-height:280px;overflow-y:auto;font-size:10px;font-family:monospace}
 .log-row{display:flex;gap:6px;padding:2px 4px;border-radius:2px;margin:1px 0}
 .log-row.running{background:#3182ce15}.log-row.success{color:#38a169}.log-row.failed{color:#e53e3e;background:#e53e3e10}
+.log-row.timeout{color:#d69e2e;background:#d69e2e10}.log-row.circuit_open{color:#ef4444;background:#ef444415}
+.log-row.skipped{color:#718096}
 .l-status{font-weight:700;min-width:60px}.l-task{color:#888;min-width:70px}.l-msg{color:#ccc}.empty{color:#4a5568}
 </style>
